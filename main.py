@@ -2,7 +2,7 @@ import cv2
 from keras.models import load_model
 import numpy as np
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-emotion_model_path = 'C:/Users/voxs/Desktop/deepfacts/emotions.hdf5' 
+emotion_model_path = 'C:/(location of your model file )' 
 emotion_model = load_model(emotion_model_path)
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 cap = cv2.VideoCapture(0)
